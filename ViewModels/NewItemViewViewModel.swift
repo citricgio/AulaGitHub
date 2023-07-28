@@ -39,7 +39,7 @@ class NewItemViewViewModel: ObservableObject {
         db.collection("users")
             .document(uId)
             .collection("todos")
-            .document("newId")
+            .document(newId)
             .setData(newItem.asDictionary()) //dictionary
     }
     
